@@ -1,0 +1,13 @@
+name: casestudyutrecht
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - numpy
+  - gdal
+  - pcraster
+  - lue=0.3.4
+  - campo
+  - pandas
+  - matplotlib-base
