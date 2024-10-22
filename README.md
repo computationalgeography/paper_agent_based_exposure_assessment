@@ -27,3 +27,6 @@ The environment file will create a environment named *casestudyutrecht* using Py
 The user guide and short reference on Conda can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html).
 
 
+## How to run
+
+Execute the script `run.sh`. It will run 25 realisations for homemaker and commuter.
