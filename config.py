@@ -30,7 +30,6 @@ query_home_select = "idx AS agent_id,postcode2 AS postcode,rd_x AS home_x,rd_y A
 query_home_where = ""
 # Uncomment if you only want to run e.g. 1000 agents
 # query_home_where = "idx<1000"
-query_home_where = "idx<500"
 
 query_work_table = "work"
 query_work_select = "idx AS agent_id,postcode2 as postcode,rd_x AS work_x,rd_y as work_y,wgs_x,wgs_y"
