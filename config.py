@@ -23,16 +23,14 @@ workday = ["NO2_hour_weekday", "PM25_hour_weekday", "noise"]
 weekend = ["NO2_hour_weekend", "PM25_hour_weekend", "noise"]
 
 epsg = 28992
-
-
-query_home_table = "home"
-query_home_select = "idx AS agent_id,postcode2 AS postcode,rd_x AS home_x,rd_y AS home_y,wgs_x,wgs_y"
-query_home_where = ""
-# Uncomment if you only want to run e.g. 1000 agents
-# query_home_where = "idx<1000"
+inmem_schedules = True
 
 query_work_table = "work"
 query_work_select = "idx AS agent_id,postcode2 as postcode,rd_x AS work_x,rd_y as work_y,wgs_x,wgs_y"
 query_work_where = ""
 
-inmem_schedules = True
+query_home_table = "home"
+query_home_select = "idx AS agent_id,postcode2 AS postcode,rd_x AS home_x,rd_y AS home_y,wgs_x,wgs_y"
+query_home_where = ""
+# Comment or modify if you want to run more agents
+query_home_where = "idx<150"
