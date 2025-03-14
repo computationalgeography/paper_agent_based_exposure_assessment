@@ -10,7 +10,7 @@ Required additional input data can be downloaded from [Zenodo](https://zenodo.or
 
 A few steps are required to run the case study.
 
- 1. You will need a working Python environment, we recommend to install Miniforge. Follow their instructions given ati e.g.:
+ 1. You will need a working Python environment, we recommend to install Miniforge. Follow their instructions given at e.g.:
 
     [https://conda-forge.org/download/](https://conda-forge.org/download/)
 
