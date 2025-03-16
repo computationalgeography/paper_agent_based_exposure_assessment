@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REALISATIONS=5
+REALISATIONS=20
 
 for (( i=0; i<${REALISATIONS}; i++ ))
 do

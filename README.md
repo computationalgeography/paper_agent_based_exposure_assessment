@@ -2,10 +2,6 @@ This repository contains the contents to run the case study described in the man
 Users on Linux operating systems should be able to execute the model script.
 
 
-## Download the input data
-Required additional input data can be downloaded from [Zenodo](https://zenodo.org/records/13913079).
-
-
 ## How to install
 
 A few steps are required to run the case study.
@@ -26,7 +22,24 @@ The environment file will create a environment named *casestudyutrecht* using Py
 
 The user guide and short reference on Conda can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html).
 
+## Download the input data
+Required additional input data can be downloaded from [Zenodo](https://zenodo.org/records/13913079).
+Extract the downloaded zip file and move its contents to the `paper_agent_based_exposure_assessment` folder.
 
 ## How to run
 
-Execute the script `run.sh`. It will run 25 realisations for homemaker and commuter.
+Activate the environment in the command prompt:
+
+`conda activate casestudyutrecht`
+
+Execute the script `run.sh`. 
+It will first run 20 realisations each for the homemaker (weekday and weekend) and commuter profiles.
+Afterwards, exposure estimates are calculated for NO2, PM2.5 and noise using 5 workdays and 2 weekend days.
+The CSV output files will be written to the current working directory.
+
+The current setup simulates 1000 agents.
+If you want to use more agents you can set the `query_home_where` in the `config.py` file to a larger value.
+
+## Questions or issues
+
+Please ask questions or file issues in the [development repository](https://github.com/computationalgeography/agent_based_exposure_assessment/issues) of this project.

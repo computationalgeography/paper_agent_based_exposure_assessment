@@ -33,4 +33,4 @@ query_home_table = "home"
 query_home_select = "idx AS agent_id,postcode2 AS postcode,rd_x AS home_x,rd_y AS home_y,wgs_x,wgs_y"
 query_home_where = ""
 # Comment or modify if you want to run more agents
-query_home_where = "idx<150"
+query_home_where = "idx<1000"
