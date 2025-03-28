@@ -9,24 +9,24 @@ A few steps are required to run the case study.
     Follow their instructions given at:
 
     [https://conda-forge.org/download/](https://conda-forge.org/download/)
-    
+
     before you continue.
 
  2. Open a terminal and browse to a location where you want to store the course contents.
 
  3. Clone this repository
- 
+
     `git clone https://github.com/computationalgeography/paper_agent_based_exposure_assessment.git`
-  
-    or download and uncompress the [zip](https://github.com/computationalgeography/paper_agent_based_exposure_assessment/archive/refs/heads/main.zip) 
+
+    or download and uncompress the [zip](https://github.com/computationalgeography/paper_agent_based_exposure_assessment/archive/refs/heads/main.zip)
     file of the repository.
 
- 4. Navigate to the `paper_agent_based_exposure_assessment` folder: 
- 
+ 4. Navigate to the `paper_agent_based_exposure_assessment` folder:
+
     `cd paper_agent_based_exposure_assessment`
- 
+
     and create the required Python environment:
- 
+
     `conda env create -f environment/environment.yaml`
 
 The environment file will create a environment named *casestudyutrecht* using Python 3.10. In case you prefer a different name you need to edit the `environment/environment.yaml` file.
@@ -36,7 +36,7 @@ The user guide and short reference on Conda can be found [here](https://docs.con
 ## Download the input data
 Required additional input data can be downloaded from [Zenodo](https://zenodo.org/records/13913079), e.g. with
 
-`wget https://zenodo.org/records/13913079/files/input_data.zip?download=1`
+`wget https://zenodo.org/records/13913079/files/input_data.zip`
 
 Extract the downloaded zip file and its contents into the `paper_agent_based_exposure_assessment` folder.
 
@@ -46,7 +46,7 @@ Activate the environment in the command prompt:
 
 `conda activate casestudyutrecht`
 
-Execute the script `run.sh`. 
+Execute the script `run.sh`.
 It will first run 10 realisations each for the homemaker (weekday and weekend) and commuter profiles.
 Note that running the simulations can take a while, the progress will be printed.
 After completion, overall exposure estimates are calculated for NO<sub>2</sub>, PM<sub>2.5</sub> and noise using 5 workdays and 2 weekend days.
